@@ -37,6 +37,8 @@ import java.util.stream.Collectors;
 @Service
 public class FormulaOneService {
 
+    public final String BASE_URL = "http://localhost:8082/images/";
+
     @Autowired
     private ChatModel chatModel;
 
@@ -57,7 +59,7 @@ public class FormulaOneService {
         map.put("input",input);
         // Method to replace placeholders in prompt file with actual text
         String readyPrompt = replaceInputWithMessageInPrompt(prompt,map);
-        ChatResponse f1Response = chatModel.call(new Prompt(prompt));
+        ChatResponse f1Response = chatModel.call(new Prompt(readyPrompt));
         //get actual text content from open AI API response
         String responseStr = f1Response.getResult().getOutput().getText();
         // generate JSON from of this string, in FormulaOneResponse format
@@ -112,7 +114,7 @@ public class FormulaOneService {
 
             ImageIO.write(resized, "png", output);
 
-            imageUrls.add(output.getAbsolutePath());
+            imageUrls.add(BASE_URL+fileName);
         }
         return imageUrls;
     }

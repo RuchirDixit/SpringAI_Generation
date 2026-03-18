@@ -4,15 +4,13 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.springai.spring_ai_demo.response.FormulaOneResponse;
 import com.springai.spring_ai_demo.service.FormulaOneService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/v1/f1")
+@CrossOrigin("*")
 public class FormulaOneController {
 
     @Autowired
