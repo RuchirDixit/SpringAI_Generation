@@ -1,4 +1,4 @@
-# 🚀 Spring AI Backend Project
+# 🚀 Spring AI Full Stack Project
 
 ## 📌 Overview
 This project is a backend application built using **Spring Boot** and **AI capabilities** powered by Spring AI. It provides APIs for General interaction, Asking F1 specific stuff and Generating images based on the description provided.
@@ -38,22 +38,23 @@ Spring AI is a framework that simplifies integrating AI models (like OpenAI, AWS
 
 ## 🔗 Frontend Repository
 👉 You can find the frontend for this project here:  
-🔗 **Frontend GitHub Repo:** [https://github.com/your-username/your-frontend-repo](https://github.com/RuchirDixit/AI_Bot_Frontend)
+🔗 **Frontend GitHub Repo:** [https://github.com/RuchirDixit/AI_Bot_Frontend](https://github.com/RuchirDixit/AI_Bot_Frontend)
 
 ---
 
 ## 📸 Screenshots
 
-### 🖥️ Application Flow
-![App Flow](images/app-flow.png)
+### 🤖 Home Page
+![Home Page](screenshots/AIDemo_MainPage.png)
 
-### 📊 API Response Example
-![API Response](images/api-response.png)
+### 🤖 General Chat Page
+![General Chat Page](screenshots/AIDemo_Chat_Page_Chat.png)
 
-### 🤖 AI Interaction
-![AI Interaction](images/ai-response.png)
+### 🤖 F1 Chat Page
+![F1 Chat Page](screenshots/f1_chat.png)
 
-> 📁 Place your images inside a folder named `images/` in the root directory of your project.
+### 🤖 Image Generation Page
+![Image Generation Page](screenshots/AiDemo_ImageGen.png)
 
 ---
 
